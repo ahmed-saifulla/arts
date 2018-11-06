@@ -1,0 +1,44 @@
+#main-bg {
+  background-image: url("../assets/banner.jpg");
+  /* Full height */
+  height: 300px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: right;
+  padding: 50px;
+}
+
+#gallery-bg {
+
+  background-image: url("../assets/bg2.jpg");
+  /* Full height */
+ 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slider-sec {
+  padding: 20px;
+}
+
+footer {
+  background-color: darkslategrey;
+  color: aliceblue;
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+form {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */

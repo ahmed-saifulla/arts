@@ -1,0 +1,42 @@
+//make navbar fixed
+
+
+#main-bg{
+    background-image: url("../assets/banner.jpg");
+
+    /* Full height */
+    height: 300px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    text-align: right;
+
+    padding: 50px;
+}
+
+#gallery-bg{
+    background-color: tomato;
+}
+
+
+#slider-sec{
+    
+    padding:20px;
+}
+
+footer{
+    background-color: darkslategrey;
+    color: aliceblue;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+form{
+    padding: 10px;
+}
+

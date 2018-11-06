@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Arts </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="sass/style.css" />
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap4.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap4.min.js"></script>
+
+    <!-- Custom Library for Carosel 1 -->
+    <link rel="stylesheet" href="css/carosel1.css">
+    <script src="js/carosel1.js"></script>
+
+    <!-- Bootbox -->
+    <script src="js/bootbox.min.js"></script>
+
+    <script>
+        bootbox.alert('hello');
+    </script>
+  
+
+    
+</head>
+<body>
+        <!-- Navbar START-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">ARTS</a>
+            
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.py">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="#myModalSignUp" data-toggle="modal" >Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="#myModal" data-toggle="modal" >Login</a>
+                    </li> 
+                </ul>
+            </div> 
+        </nav>
+
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+        
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Artist Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  
+                </div>
+                <div class="modal-body">
+                  <form action="adminPanel.py" method="POST">
+                      Artist ID<input type="text" name="aid" required class="form-control"><br>
+                      Password<input type="password" name="pwd" required  class="form-control">
+                  
+                </div>
+                <div class="modal-footer">
+                  <input type="submit" class="btn btn-success" id="login-btn" value="Login">
+                </form>
+                  <script>
+                    $('#login-btn').click(function(){
+                        
+                    });
+                  </script>
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="modal fade" id="myModalSignUp" role="dialog">
+            <div class="modal-dialog">
+        
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"> Artist Sign Up</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  
+                </div>
+                <div class="modal-body">
+                  <form action="signup.py" method="POST">
+                      Name<input type="text" name="a_name" required class="form-control"><br>
+                      Specialist In<input type="text" name="special" required class="form-control"><br>
+                      Place<input type="text" name="place" required class="form-control"><br>
+                      Contact No<input type="text" name="contact" required class="form-control" pattern="[0-9]{10}" ><br>
+                      Password<input type="password" name="pwd" required  class="form-control">
+                  
+                </div>
+                <div class="modal-footer">
+                  <input type="submit" class="btn btn-success" id="login-btn" value="Login">
+                </form>
+                  
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        <!-- Navbar E N D -->
+        
+        <!-- ------------------------------------------------------------------------------------ -->
+        
+        <!-- Main Banner START-->
+        <section id="main-bg">
+
+            
+                <h1>Arts</h1>
+               <p>The expression or application of human creative skill and imagination, typically in a visual form such as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.</p>
+            
+        </section>
+        <!-- Main Banner E N D -->
+
+        <!-- ------------------------------------------------------------------------------------ -->
+        
+        <!-- Candidates Slider Start-->
+        <section id="slider-sec">
+            <div class="container-fluid">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-md-3  active">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 1" class="thumb">
+                                <img class="" src="assets\1.jpg"  width="250px" height="150px" alt="slide 1">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 3" class="thumb">
+                                <img class="" src="assets\2.jpg"  width="250px" height="150px" alt="slide 2">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 4" class="thumb">
+                                <img class="" src="assets\3.jpg" alt="slide 3" width="250px" height="150px">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3 ">
+                            <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 5" class="thumb">
+                                <img class="" width="250px" height="150px" src="assets\4.jpg" alt="slide 4">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 6" class="thumb">
+                                <img class="" width="250px" height="150px" src="assets\5.jpg" alt="slide 5">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 7" class="thumb">
+                                <img class="i" width="250px" height="150px" src="assets\6.jpg" alt="slide 6">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3 ">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 8" class="thumb">
+                                <img class="" width="250px" height="150px" src="assets\7.jpg" alt="slide 7">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-3  ">
+                            <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <a href="#" title="image 2" class="thumb">
+                                <img class="" width="250px" height="150px" src="assets\8.jpg" width="250px" height="100px" alt="slide 8">
+                                </a>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>    
+        <!-- Candidates Slider  E N D-->
+
+        <!-- ------------------------------------------------------------------------------------ -->
+
+        <footer>
+            <p>A Shabaka Product . 2018 </p>
+        </footer>
+
+        
+</body>
+</html>
